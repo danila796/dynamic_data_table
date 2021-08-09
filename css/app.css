@@ -1,0 +1,21 @@
+th {
+  user-select: none;
+}
+th p {
+  display: inline-block;
+  padding: 5px;
+}
+th p:hover {
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #A7C7E7;
+}
+tr:nth-child(odd), tr:first-child:hover {
+  background-color: #E8E8E8;
+}
+
+/*# sourceMappingURL=app.css.map */
