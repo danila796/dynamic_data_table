@@ -21,5 +21,8 @@ tr:hover {
 tr:nth-child(odd), tr:first-child:hover {
   background-color: #E8E8E8;
 }
+tr.search_highlight {
+  background-color: #FCF55F;
+}
 
 /*# sourceMappingURL=app.css.map */
