@@ -110,9 +110,9 @@ function searchValue(input) {
   let table = document.getElementsByTagName("table")[0];
   for (let i = 1; i < table.rows.length; i++){    
     if (table.rows[i].cells[0].innerHTML.toLocaleLowerCase().includes(filter) && filter != ''){
-      table.rows[i].setAttribute('bgcolor','#FCF55F');
+      table.rows[i].classList.add('search_highlight');
     } else {
-      table.rows[i].removeAttribute('bgcolor','#FCF55F');
+      table.rows[i].classList.remove('search_highlight');
     }
   }
   
@@ -129,7 +129,7 @@ function closeInput() {
   let input = document.getElementById('input_name');
   input.value = '';
   input.style.display = 'none';
-  for (let i = 1; i < table.rows.length; i++){    
-    table.rows[i].removeAttribute('bgcolor','#FCF55F');
+  for (let i = 1; i < table.rows.length; i++){
+    table.rows[i].classList.remove('search_highlight');
   }
 }
